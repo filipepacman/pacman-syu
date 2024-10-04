@@ -1,0 +1,23 @@
+REGISTRADORES: RAX / RBX / RCX / RSI/ RDI || 64BITS
+ABREVIAÇÃO: AX: ACOMULATER / CX: COUNTER (LOOPING)
+ALGUNS DE USO ESPECIALA: RSP /RBB
+
+ 
+REGISTRADORES EXTENDED: EAX / EBX / ECX / ESI /EDI || 32BITS
+
+REGISTRADORES SEM PREFIXO: AX / BX / CX / SI / DI || 16BITS
+
+
+o que é keyworlds, qual é arquitura para o intel, amd?
+
+
+
+sudo pacman -S nasm
+nano hello.asm
+# (Cole o código assembly)
+nasm -f elf64 hello.asm -o hello.o
+ld -o hello hello.o -s
+./hello
+
+
+as ou nasm? sudo pacman -S binutils
