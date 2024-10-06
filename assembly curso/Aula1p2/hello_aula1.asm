@@ -1,5 +1,5 @@
 section .data
-    msg db 'Hello, WORLD!', 0xA    ;Isso não é uma variavel, é um apontamento.
+    msg db 'Hello, WORLD!', 0xA, 0xD    ;Isso não é uma variavel, é um apontamento.
     tam equ $- msg ; igual aos caracters (Hello, WORLD!)= 13
 section .text
 
@@ -13,7 +13,7 @@ _start:
     mov rdx, tam ;filho
     int 0x80
 
-
+saida:
     mov rax, 0x1
-    mov rbx, 0x10
+    mov rbx, 0x0
     int 0x80
